@@ -5,7 +5,6 @@ import ru.netology.NotFoundException;
 import ru.netology.Product;
 
 
-
 class ShopRepositoryTest {
     @Test
     public void shouldAddToArray() {
@@ -21,6 +20,7 @@ class ShopRepositoryTest {
         Product[] actual = shop.findAll();
         Assertions.assertArrayEquals(expected, actual);
     }
+
     @Test
     public void removeByIdThrowException() {
         Product product1 = new Product(25, "Пуховик", 65_000);
